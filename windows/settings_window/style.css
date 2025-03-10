@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Latin+Modern+Math&display=swap');
+
+body {
+    font-family: 'Latin Modern Math', Cambria Math, STIX Two Math, serif;
+    font-size: smaller;
+    padding: 20px;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid white; */
+}
+  
+th, td {
+    padding: 5px;
+    border: none;
+    text-align: left;
+    color: black;
+}
+
+
+  
+
+  

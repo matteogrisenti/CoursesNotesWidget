@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Latin+Modern+Math&display=swap');
+
+body {
+    font-family: 'Latin Modern Math', Cambria Math, STIX Two Math, serif;
+    font-size: smaller;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid white; */
+}
+  
+th, td {
+    padding: 5px;
+    border: none;
+    text-align: left;
+    color: white;
+}
+
+.notes-status {
+    width: 30px;
+    text-align: center;  
+}
+  
+.square {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+  
+.square[data-status="true"] {
+    background-color: white;
+}
+  

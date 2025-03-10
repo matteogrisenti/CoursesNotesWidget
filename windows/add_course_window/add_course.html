@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>ADD COURSE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Insert info of the course</h3>
+  
+  <label for="courseName">Course Name:</label>
+  <input type="text" id="courseName" placeholder="Course name">
+
+  <div id="lessonsContainer">
+    <div class="lessonRow">
+      <label>Day of the week:</label>
+      <select class="courseDay">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+  
+      <label>Lesson time:</label>
+      <input type="time" class="courseTime">
+    </div>
+  </div>
+
+  <button id="addLessonBtn">Add Lesson</button>
+  <button id="confirmBtn">Confearm</button>
+
+  <script src="add_course.js"></script>
+</body>
+</html>
