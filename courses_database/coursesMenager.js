@@ -1,8 +1,14 @@
+const { app } = require('electron');
 const { Lesson, Course } = require('../classes.js');
 const fs = require('fs');
 const path = require('path');
 
-const coursesFilePath = path.join(__dirname, 'courses.txt');
+//const coursesFilePath = path.join(__dirname, 'courses.txt');
+const coursesFilePath = path.join(app.getPath('userData'), 'courses.txt');
+if(!fs.existsSync(coursesFilePath)){
+  console.log("DB: File course.txt found, creating a new one.");
+  fs.writeFileSync(coursesFilePath, '', 'utf8');
+}
 
 // PARSE FUNCTIONS // 
 // Function to parse a lesson string into a Lesson instance
