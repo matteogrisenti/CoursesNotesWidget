@@ -9,6 +9,7 @@ let addCourseWindow;
 
 // Attiva l'avvio automatico dopo che l'app è pronta
 app.whenReady().then(() => {
+  app.setLoginItemSettings({ openAtLogin: false });
   createMainWindow();
 });
 
